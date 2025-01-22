@@ -7,6 +7,9 @@
     "test": "jest --passWithNoTests --runInBand",
     "prepare": "husky"
   },
+  "engines": {
+    "node": ">=20"
+  },
   "author": "Maycon Jesus <maycon.r.dejesus@gmail.com>",
   "license": "ISC",
   "devDependencies": {
