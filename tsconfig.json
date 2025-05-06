@@ -1,13 +1,26 @@
 {
   "compilerOptions": {
-    "outDir": "dist",
+    "outDir": "./dist",
+    "rootDirs": ["./src", "./test"],
+    "baseUrl": "./",
     "module": "commonjs",
-    "target": "ES2019",
+    "target": "ES2023",
+    "alwaysStrict": true,
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "removeComments": true,
+    "sourceMap": true,
     "esModuleInterop": true,
-    "allowJs": true,
+    "allowJs": false,
+    "resolveJsonModule": true,
     "paths": {
       "@src/*": ["src/*"],
       "@test/*": ["test/*"]
     }
-  }
+  },
+  "include": ["./src/**/*.ts", "./test/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
 }
